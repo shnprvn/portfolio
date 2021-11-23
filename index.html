@@ -8,8 +8,8 @@
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,13 @@
     <!--=======Header=======-->
     <header id="header">
         <div class="d-flex flex-column">
+		<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
             <div class="profile"><img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="indexv2.html">SHANA PARVEEN</a></h1>
                 <div class="social-links mt-3 text-center">
@@ -44,10 +51,10 @@
             <nav class="nav-menu">
 
                 <ul>
-                    <li class="active"><a href="#hero"><i class="bx bx-user"></i><span class="d-none d-md-inline">About</span></a></li>
-                    <li><a href="#skills"><i class="icofont-gears"></i><span class="d-none d-md-inline">Skills</span></a></li>
-                    <li><a href="#resume"><i class="icofont-file-document"></i><span class="d-none d-md-inline">Resume</span></a></li>
-                    <li><a href="#contact"><i class="bx bx-envelope"></i><span class="d-none d-md-inline">Contact</span></a></li>
+                    <li class="active"><a href="#hero"><i class="bx bx-user"></i><span class="d-none d-md-inline ml-2">About</span></a></li>
+                    <li><a href="#skills"><i class="icofont-gears"></i><span class="d-none d-md-inline ml-2">Skills</span></a></li>
+                    <li><a href="#resume"><i class="icofont-file-document"></i><span class="d-none d-md-inline ml-2">Resume</span></a></li>
+                    <li><a href="#contact"><i class="bx bx-envelope"></i><span class="d-none d-md-inline ml-2">Contact</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +63,7 @@
         <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
             <div class="hero-container">
                 <h1>Hi, I'm Shana Parveen</h1>
-                <p>I am an enthusiastic software developer. I enjoy building everything from small websites to rich interactive web applications &amp; can provide clean code. There's certainly plenty of to learn, more problems to solve and
+                <p class="p-4 m-4">I am an enthusiastic software developer. I enjoy building everything from small websites to rich interactive web applications &amp; can provide clean code. There's certainly plenty of to learn, more problems to solve and
                     yet more to build.</p>
             </div>
         </section>
@@ -69,7 +76,7 @@
                     <p>"Once you stop learning, you start dying." - Albert Einstein.</p>
                 </div>
 
-                <div class="row">
+                <div class="row pb-4">
 
                     <div class="col-lg-6">
 
@@ -90,6 +97,13 @@
 
                         <div class="progress">
                             <span class="skill">JavaScript <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                            </div>
+                        </div>
+						
+						<div class="progress">
+                            <span class="skill">Vue Js <i class="val">75%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
                             </div>
@@ -117,6 +131,12 @@
                             <span class="skill">jQuery <i class="val">80%</i></span>
                             <div class="progress-bar-wrap">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                            </div>
+                        </div>
+						<div class="progress">
+                            <span class="skill">PHP <i class="val">70%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
                             </div>
                         </div>
                         <!-- <div class="progress"> -->
@@ -150,10 +170,25 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h3 class="resume-title">Professional Experience</h3>
+						<div class="resume-item">
+                            <h4>Partner Success</h4>
+                            <p>Keytrack, Auckland, New Zealand</p>
+                            <h5>June 2021 - Present</h5>
+                            <ul>
+                                <li>Develop high quality and efficient software solutions ensuring requirements were within scope</li>
+								<li>Front-end stack - HTML, CSS, SASS, Bootstrap, Bootstrap Vue, JavaScript and Vue</li>
+								<li>Implement back-end functionalities using PHP in Laravel framework and MySQL</li>
+								<li>Git version control using Bitbucket</li>
+								<li>Extensive use of SQL and MySQL Workbench</li>
+								<li>Take ownership of bugs found and provide a resolution in a timely manner</li>
+								<li>Create and maintain technical documentation</li>
+
+                            </ul>
+                        </div>
                         <div class="resume-item">
                             <h4>Software Support Specialist</h4>
                             <p>simPRO Software, Auckland, New Zealand</p>
-                            <h5>2020 - Present</h5>
+                            <h5>Oct 2020 - June 2021</h5>
                             <ul>
                                 <li>Conduct thorough testing of the software to identify any defects and escalate for a resolution if required whilst continuing to maintain a quality relationship between the client and the business</li>
                                 <li>Take ownership of problems and provide strategic solutions to clients. </li>
@@ -281,5 +316,30 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <!-- Template Main JS File -->
   <script src="script.js"></script>
+  <!-- scripts -->
+<script src="../particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
 <body>
 </html>
